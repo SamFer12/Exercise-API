@@ -1,0 +1,24 @@
+meta {
+  name: GET Users
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5000/api/users
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYwZDBmYzI0ZWU3ZDQwY2JkMDAzYmY2IiwiaWF0IjoxNzEyODIwOTQyLCJleHAiOjE3MTI5MDczNDJ9.E2n9vcT1aOaSpFKhQAu91oZB-hAaYZYTVZgxC59aRDc
+}
+
+body:json {
+  {
+    "name" : "Administrator",
+    "email" :"sammy@example.com",
+    "password":"232323",
+    "confirm_password" : "232325"
+  }
+}
